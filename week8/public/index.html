@@ -14,7 +14,7 @@
       <div id="form-container" class="panel hidden">
         <form id="add-file-form">
           <input type="hidden" id="file-id" value="" />
-
+          
           <div class="form-group">
             <label for="file-title">Title</label>
             <input type="text" class="form-control" id="file-title" placeholder="Title">
@@ -36,7 +36,6 @@
           <strong>{{title}}</strong> - {{description}}
           <span class="pull-right">
             <button type="button" class="btn btn-xs btn-default" onclick="editFileClick('{{_id}}')">Edit</button>
-            <button type="button" class="btn btn-xs btn-danger" onclick="deleteFileClick('{{_id}}')">Del</button>
           </span>
         </li>
         {{/each}}
