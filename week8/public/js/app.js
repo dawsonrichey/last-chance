@@ -80,7 +80,6 @@ function cancelFileForm() {
   toggleAddFileFormVisibility();
 }
 
-
 function editFileClick(id) {
   const file = window.fileList.find(file => file._id === id);
   if (file) {
@@ -90,7 +89,21 @@ function editFileClick(id) {
 }
 
 function deleteFileClick(id) {
-  console.log("File", id, "is DOOMED!!!!!!");
+  if (confirm("Are you sure?")) {
+    $.ajax({
+      type: 'DELETE',
+      url: '/api/file/' + id,
+      dataType: 'json',
+      contentType : 'application/json',
+    })
+      .done(function(response) {
+        console.log("File", id, "is DOOMED!!!!!!");
+        refreshFileList();
+      })
+      .fail(function(error) {
+        console.log("I'm not dead yet!", error);
+      })
+  }
 }
 
 function setFormData(data) {
