@@ -89,6 +89,10 @@ function editFileClick(id) {
   }
 }
 
+function deleteFileClick(id) {
+  console.log("File", id, "is DOOMED!!!!!!");
+}
+
 function setFormData(data) {
   data = data || {};
 
