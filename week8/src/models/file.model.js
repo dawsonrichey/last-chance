@@ -5,6 +5,8 @@ const FileSchema = new mongoose.Schema({
   title: String,
   description: String,
   math: String,
+  science: String,
+  english: String,
   created_at: { type: Date, default: Date.now },
   deleted: {type: Boolean, default: false}
 });
