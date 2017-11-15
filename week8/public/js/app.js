@@ -49,6 +49,7 @@ function submitFileForm() {
     _id: $('#file-id').val(),
   };
 
+
   let method, url;
   if (fileData._id) {
     method = 'PUT';
@@ -109,6 +110,9 @@ function deleteFileClick(id) {
 
 function setFormData(data) {
   data = data || {};
+
+  console.log("SETTING", data)
+  return false;
 
   const file = {
     title: data.title || '',
