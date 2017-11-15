@@ -33,7 +33,7 @@ router.post('/file', function(req, res, next) {
     description: req.body.description,
     math: req.body.math,
     science: req.body.science,
-    english: req.body.english,
+    english: req.body.english
   };
 
   File.create(fileData, function(err, newFile) {
