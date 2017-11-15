@@ -45,6 +45,7 @@ function submitFileForm() {
   const fileData = {
     title: $('#file-title').val(),
     description: $('#file-description').val(),
+    math: $('#file-math').val(),    
     _id: $('#file-id').val(),
   };
 
@@ -112,10 +113,12 @@ function setFormData(data) {
   const file = {
     title: data.title || '',
     description: data.description || '',
+    math: data.math || '',    
     _id: data._id || '',
   };
 
   $('#file-title').val(file.title);
   $('#file-description').val(file.description);
+  $('#file-math').val(file.math);  
   $('#file-id').val(file._id);
 }
