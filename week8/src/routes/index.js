@@ -62,6 +62,8 @@ router.put('/file/:fileId', function(req, res, next) {
     file.title = req.body.title;
     file.description = req.body.description;
     file.math = req.body.math;
+    file.science = req.body.science;
+    file.english = req.body.english;
 
     file.save(function(err, savedFile) {
       if (err) {
