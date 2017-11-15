@@ -45,7 +45,9 @@ function submitFileForm() {
   const fileData = {
     title: $('#file-title').val(),
     description: $('#file-description').val(),
-    math: $('#file-math').val(),    
+    math: $('#file-math').val(), 
+    science: $('#file-science').val(), 
+    english: $('#file-english').val(),    
     _id: $('#file-id').val(),
   };
 
@@ -115,12 +117,16 @@ function setFormData(data) {
   const file = {
     title: data.title || '',
     description: data.description || '',
-    math: data.math || '',    
+    math: data.math || '',
+    science: data.science || '',    
+    english: data.english || '',        
     _id: data._id || '',
   };
 
   $('#file-title').val(file.title);
   $('#file-description').val(file.description);
   $('#file-math').val(file.math);  
+  $('#file-science').val(file.science);  
+  $('#file-english').val(file.english);  
   $('#file-id').val(file._id);
 }
