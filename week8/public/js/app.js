@@ -111,9 +111,7 @@ function deleteFileClick(id) {
 function setFormData(data) {
   data = data || {};
 
-  console.log("SETTING", data)
-  return false;
-
+ 
   const file = {
     title: data.title || '',
     description: data.description || '',
