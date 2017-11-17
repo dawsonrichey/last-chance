@@ -1,7 +1,7 @@
 // src/config/index.js
 
 module.exports = {
-  appName: 'Our Glorious Node Project',
+  appName: 'Grade Book',
   port: 3030,
   db: {
     host: 'localhost',
