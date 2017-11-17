@@ -1,3 +1,5 @@
+<!-- DAWSON RICHEY Gradebook APP -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,7 +53,7 @@
       <ul class="list-group">
         {{#each files}}
         <li class="list-group-item">
-          {{title}} {{description}} <strong>Math:</strong> {{math}} <strong>Science:</strong> {{science}} <strong>English:</strong> {{english}}
+          {{title}} {{description}} <br> <br> <strong>Math:</strong> {{math}} <strong>Science:</strong> {{science}} <strong>English:</strong> {{english}}
           <span class="pull-right">
             <button type="button" class="btn btn-xs btn-default" onclick="editFileClick('{{_id}}')">Edit</button>
             <button type="button" class="btn btn-xs btn-danger" onclick="deleteFileClick('{{_id}}')">Delete</button>            

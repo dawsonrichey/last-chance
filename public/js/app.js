@@ -1,4 +1,4 @@
-
+// DAWSON RICHEY Gradebook APP 
 
 function getFiles() {
   return $.ajax('/api/file')
