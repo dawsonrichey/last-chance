@@ -1,5 +1,7 @@
 # last-chance
 
+This application allows you to create, read, update, and delete students names and there grades in three categories Math, Science, and English.
+
 1. Install dependencies
 
 npm install
